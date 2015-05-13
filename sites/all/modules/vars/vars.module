@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vars feature.
+ */
+
+include_once 'vars.features.inc';
