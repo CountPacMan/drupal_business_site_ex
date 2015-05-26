@@ -2,9 +2,6 @@
 
     function recipes_form_alter(&$form, &$form_state, $form_id){
         if ($form_id == 'recipe_node_form') {
-            print '<pre>';
-            print_r($form);
-            print '</pre>';
             $form['menu']['#access'] = 0;
             $form['revision_information']['#access'] = 0;
             $form['author']['#access'] = 0;
