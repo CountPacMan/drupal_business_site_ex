@@ -1,0 +1,5 @@
+name = recipes
+description = Add some recipes.
+package = Epicodus Examples
+core = 7.x
+files[] = recipe.module
