@@ -1,0 +1,84 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+body {
+    background: #DCD8E8;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: #544C6B;
+    line-height: 1.2em;
+}
+
+p {
+    margin: 12px;
+}
+a:link {
+    color: #7E71A0;
+    text-decoration: none;
+}
+
+a:active {
+    color: #544C6B;
+}
+
+a:visited {
+    color: #7E71A0;
+}
+
+.field-item.even {
+    font-size: 0.75em;
+}
+
+.page__title,
+.node__title {
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-left: solid 2px #544C6B;
+    border-radius: 90px;
+}
+
+#header {
+    background: #544C6B;
+    color: #DCD8E8;
+}
+
+.tags {
+    font-size: 80%;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #E8E5F0;
+}
+
+.header__logo-image {
+    width: 60px;
+}
+
+.user-img {
+    width: 60px;
+    display: block;
+}
+
+.submitter-text {
+    font-size: 0.75em;
+}
