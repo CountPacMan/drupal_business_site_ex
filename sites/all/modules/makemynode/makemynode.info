@@ -1,0 +1,5 @@
+name = Make. My. NODE.
+description = Make the node, already
+package = NODE, lol
+core = 7.x
+files[] = makemynode.module
