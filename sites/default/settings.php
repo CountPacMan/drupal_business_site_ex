@@ -212,21 +212,21 @@
  *   );
  * @endcode
  */
-$databases = array (
-  'default' =>
-  array (
-    'default' =>
-    array (
-      'database' => 'coffee_ex',
-      'username' => 'pimby',
-      'password' => 'password',
-      'host' => '127.0.0.1',
-      'port' => '8889',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
-);
+ $databases = array (
+   'default' =>
+   array (
+     'default' =>
+     array (
+       'database' => 'coffee_ex',
+       'username' => 'pimby',
+       'password' => 'password',
+       'host' => 'localhost',
+       'port' => '',
+       'driver' => 'mysql',
+       'prefix' => '',
+     ),
+   ),
+ );
 
 /**
  * Access control for update.php script.
@@ -579,3 +579,6 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);

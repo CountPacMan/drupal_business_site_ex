@@ -23,7 +23,7 @@ Drupal.behaviors.my_custom_behavior = {
     $('p.submitted').addClass('submitter-text');
     $('.field-type-taxonomy-term-reference').children('.field-items').addClass('tags');
     $('article').children('header').mouseenter(function() {
-        alert('omg!!1!!!');
+        // alert('omg!!1!!!');
     });
 
 

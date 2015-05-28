@@ -6,20 +6,88 @@
  * of these @include files will be combined into a single file.
  */
 
-/* Import Sass mixins, variables, Compass modules, etc. */
-@import "init";
+ /* HTML element (SMACSS base) rules */
+ @import "../css/normalize.css";
 
-/* HTML element (SMACSS base) rules */
-@import "normalize";
+ /* Layout rules */
+ @import "../css/layouts/responsive.css";
 
-/* Layout rules */
-@import "layouts/responsive";
-
-/* Component (SMACSS module) rules */
-@import "components/misc";
-// Optionally, add your own components here.
-@import "print";
+ /* Component (SMACSS module) rules */
+ @import "../css/components/misc.css";
+ /* Optionally, add your own components here. */
+ @import "../css/print.css";
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
+
+$lightpurple: #DCD8E8;
+$darkpurple: #544C6B;
+$linkpurple: #7E71A0;
+
+body {
+    background: $lightpurple;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: $darkpurple;
+    line-height: 1.2em;
+}
+
+p {
+    margin: 12px;
+}
+a:link {
+    color: $linkpurple;
+    text-decoration: none;
+}
+
+a:active {
+    color: $darkpurple;
+}
+
+a:visited {
+    color: $linkpurple;
+}
+
+.field-item.even {
+    font-size: 0.75em;
+}
+
+.item-list {
+    font-size: 50%;
+    max-width: 20%;
+}
+
+.page__title,
+.node__title {
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-left: solid 2px $darkpurple;
+    border-radius: 90px;
+}
+
+#header {
+    background: $darkpurple;
+    color: $lightpurple;
+}
+
+.tags {
+    font-size: 80%;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #E8E5F0;
+}
+
+.header__logo-image {
+    width: 60px;
+}
+
+.user-img {
+    width: 60px;
+    display: block;
+}
+
+.submitter-text {
+    font-size: 0.75em;
+}
