@@ -27,7 +27,7 @@ function makemynode_enable() {
 
 function makemynode_disable() {
     $nodesearch = node_load_multiple(array(), array('title' => "biscuitsZZZY"));
-    // $node = array_splice($nodesearch, 0, 1);
+    dpm($nodesearch); //--- like vardump
     foreach ($nodesearch as $node) {
         node_delete($node->nid);
     }
